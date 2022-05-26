@@ -1,6 +1,6 @@
 {
   "name": "uiuxtest",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "uiux test tool",
   "main": "index.js",
   "scripts": {

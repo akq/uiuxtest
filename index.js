@@ -4,7 +4,8 @@ process.env.NODE_ENV = 'test'
 var jest = require('jest');
 var path = require('path')
 
-function runTest({dir, src='src'}){
+function runTest({dir, src='src', domains}){
+    process.env.domainUrl = domains || 'http://localhost:1234/domain.js'
     var argv = ['--verbose']
     var [r, b] = calcRel(__dirname, path.resolve(process.cwd(), dir))
     argv.push(`--roots`)

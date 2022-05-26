@@ -2,8 +2,9 @@
 // allows you to do things like:
 // expect(element).toHaveTextContent(/react/i)
 // learn more: https://github.com/testing-library/jest-dom
-import '@testing-library/jest-dom';
-import 'uiuxloader/jsdom-adapter'
-import { screen } from '@testing-library/react';
+require('@testing-library/jest-dom');
+require('uiuxloader/jsdom-adapter')
+var { screen } = require('@testing-library/react');
 
 window.__screen = screen
+window.domainURL = process.env.domainUrl
